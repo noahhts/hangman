@@ -13,4 +13,12 @@ def select_word(dict)
   word
 end
 
-puts select_word(dict)
+correct_word = select_word(dict).split('')
+correct_word.each do
+  print '_ '
+end
+print "\n"
+puts correct_word.join(' ')
+
+incorrect_guesses = 7
+puts "You have up to #{incorrect_guesses} incorrect guesses"
